@@ -28,6 +28,7 @@ void correr_teste_estatistico(Problema *p, int tipo_algo, int vizinhanca) {
             algoritmo_genetico(p, &s_out);
         } else if (tipo_algo == 3) { // Híbrido
             hibrido_sequencial(p, &s_out);
+            //hibrido_intercalado(p, &s_out);
         }
 
         // Guarda o resultado
@@ -71,7 +72,7 @@ int main() {
     Solucao s_inicial, s_final, s_genetico, s_hibrido;
     char nome_ficheiro[] = "tourism_500.txt";
     int opcao, sub_opcao;
-    int runs = 5000;
+    int runs = 1000;
 
     // Carregar ficheiro
     ler_ficheiro(nome_ficheiro, &p);
