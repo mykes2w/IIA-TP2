@@ -71,7 +71,7 @@ int main() {
     Solucao s_inicial, s_final, s_genetico, s_hibrido;
     char nome_ficheiro[] = "tourism_500.txt";
     int opcao, sub_opcao;
-    int runs = 1000;
+    int runs = 5000;
 
     // Carregar ficheiro
     ler_ficheiro(nome_ficheiro, &p);
